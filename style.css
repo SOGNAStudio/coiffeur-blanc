@@ -1070,47 +1070,20 @@ html, body {
 .hero-editorial { overflow: hidden !important; }
 
 
-/* ── MOBILE FIX: About & Bewertungen überschneiden sich nicht ── */
-@media (max-width: 640px) {
-
-  /* About: Quote-Box vollständig aus dem absoluten Flow rausnehmen */
-  .about-visual {
-    position: static !important;
-    overflow: visible !important;
-  }
-  .about-quote {
-    position: static !important;
-    bottom: auto !important;
-    right: auto !important;
-    left: auto !important;
-    margin: 1.2rem 0 0 0 !important;
-    max-width: 100% !important;
-  }
-
-  /* About-Layout: genug Abstand nach unten */
-  .about-section {
-    padding-bottom: 3rem !important;
-  }
-  .about-layout {
-    gap: 2rem !important;
-  }
-
-  /* Bewertungen: Grid auf 1 Spalte, kein Overflow */
-  .reviews-grid {
-    grid-template-columns: 1fr !important;
-    gap: 1rem !important;
-  }
-
-  /* Review-Karte: kein horizontaler Overflow */
-  .review-card {
-    padding: 1.5rem 1.4rem !important;
-    overflow: hidden;
-  }
-}
 
 /* ── MOBILE/TABLET FIX: Rosa Schrift in Section-Titeln kleiner ── */
 @media (max-width: 1024px) {
   .section-title em {
+    font-size: 2.6rem !important;
+  }
+}
+
+  /* Kontakt: "Nachricht senden" & "So findest du uns" */
+  .contact-layout .section-title {
+    font-size: 2.1rem !important;
+  }
+  .contact-layout .section-title em {
     font-size: 2.4rem !important;
   }
 }
+
