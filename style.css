@@ -1039,3 +1039,18 @@ font-size: 1rem;
 
 .xoxo-section { background: var(--off); } 
 
+/* ── MOBILE FIX: wide-pad Overflow ── */
+@media (max-width: 480px) {
+  .section.wide-pad {
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+  }
+  .page-hero {
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+  }
+  .footer.wide-pad {
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+  }
+}
