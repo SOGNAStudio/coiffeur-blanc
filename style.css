@@ -1054,3 +1054,17 @@ font-size: 1rem;
     padding-right: 5% !important;
   }
 }
+
+
+/* ============================================================
+   FIX: weisser Streifen rechts (Handy/Tablet, Index)
+   Verhindert horizontalen Overflow beim Zoom-out
+   ============================================================ */
+html, body {
+  overflow-x: hidden !important;
+  max-width: 100%;
+}
+*, *::before, *::after { max-width: 100%; }
+
+/* Hero: Portrait-Wrap & absolute Elemente sicher im Container halten */
+.hero-editorial { overflow: hidden !important; }
