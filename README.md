@@ -1,5 +1,6 @@
 💇‍♀️ Coiffeur Blanc – Website
 
+
 Moderne, responsive Website für einen Coiffeur-Salon in Zürich.
 Erstellt mit HTML, CSS und JavaScript.
 
@@ -26,15 +27,25 @@ Der Fokus liegt auf klarer Struktur, visueller Qualität und einer angenehmen Us
 ⚡ Funktionen
 
 Vollständig responsives Design (optimiert für Mobilgeräte & Desktop)
+
 Modernes, minimalistisches UI mit hochwertiger Typografie
+
 Starke visuelle erste Impression durch Hero Section
+
 Strukturierte Darstellung von Leistungen und Preisen
+
 Bestseller-Bereich für hervorgehobene Behandlungen
+
 Interaktive Navigation inkl. Mobile-Menü
+
 Call-to-Action zur Terminanfrage
+
 Kontaktformular mit Feedback-Interaktion
+
 Scroll-basierte Effekte (z. B. aktiver Navigationszustand)
+
 Klare Navigation & intuitiver UX-Ablauf
+
 
 🖥️ Technologien
 
