@@ -1173,3 +1173,64 @@ html, body {
   .hero-editorial img.hero-portrait-circle { width: 80px !important; }
 }
 
+/* ═══════════════════════════════════════════════ */
+/* === V8: Section-title em size, About spacing,
+         Mobile hero polish (text, portrait, btns) === */
+/* ═══════════════════════════════════════════════ */
+
+/* Make rose <em> subtitle match the main title size (was 4rem hardcoded) */
+.section-title em {
+  font-size: 1em !important;
+  line-height: 1 !important;
+}
+.section-title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.4rem;
+}
+
+/* Kontakt page hero title — same harmonised sizing */
+.page-hero .section-title { font-size: clamp(2.2rem, 4vw, 3.2rem); }
+.page-hero .section-title em { font-size: 1em !important; }
+
+/* ABOUT — heading 1rem lower so it doesn't kiss the quote, more bottom space */
+#about .about-content { padding-top: 1rem; }
+#about.about-section { padding-bottom: 8rem; }
+#bewertungen { padding-top: 5rem; }
+
+/* MOBILE & TABLET — hero polish only */
+@media (max-width: 1100px) {
+  .hero-editorial .hero-portrait-wrap {
+    top: calc(var(--header-h) - 0.5rem) !important;
+  }
+  /* Reserve right space so text isn't pushed under the round image */
+  .hero-text { padding-right: 170px; }
+}
+@media (max-width: 768px) {
+  .hero-editorial.wide-pad {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+  .hero-editorial .hero-portrait-wrap {
+    top: calc(var(--header-h) - 0.25rem) !important;
+    right: 1rem !important;
+  }
+  .hero-editorial img.hero-portrait-circle { width: 92px !important; }
+  .hero-text { padding-right: 110px; }
+  .hero-eyebrow { margin-top: 0 !important; }
+
+  /* Buttons not stretched full width — content-sized */
+  .hero-ctas { flex-direction: row !important; flex-wrap: wrap; gap: 0.6rem !important; }
+  .hero-ctas .btn {
+    width: auto !important;
+    padding: 0.7rem 1.1rem !important;
+    font-size: 0.72rem !important;
+    letter-spacing: 0.12em !important;
+  }
+}
+@media (max-width: 480px) {
+  .hero-text { padding-right: 96px; }
+  .hero-editorial img.hero-portrait-circle { width: 78px !important; }
+  .hero-ctas .btn { padding: 0.65rem 0.95rem !important; font-size: 0.68rem !important; }
+}
