@@ -14,7 +14,9 @@ Der Fokus liegt auf klarer Struktur, visueller Qualität und einer angenehmen Us
 👤 Über uns – Einblick in das Atelier, Philosophie und Team
 💬 Bewertungen – Kundenstimmen und Erfahrungsberichte
 📅 Termin & Kontakt – Kontaktformular, Standort, Öffnungszeiten und Terminanfragen
+
 ⚡ Funktionen
+
 Vollständig responsives Design (optimiert für Mobilgeräte & Desktop)
 Modernes, minimalistisches UI mit hochwertiger Typografie
 Starke visuelle erste Impression durch Hero Section
@@ -25,10 +27,12 @@ Call-to-Action zur Terminanfrage
 Kontaktformular mit Feedback-Interaktion
 Scroll-basierte Effekte (z. B. aktiver Navigationszustand)
 Klare Navigation & intuitiver UX-Ablauf
+
 🖥️ Technologien
 HTML5
 CSS3
 JavaScript (Vanilla)
+
 🎯 Ziel des Projekts
 Ziel war es, eine moderne, ästhetische und benutzerfreundliche Website für einen Coiffeur-Salon zu erstellen, die:
 
