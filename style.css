@@ -1107,3 +1107,10 @@ html, body {
     overflow: hidden;
   }
 }
+
+/* ── MOBILE/TABLET FIX: Rosa Schrift in Section-Titeln kleiner ── */
+@media (max-width: 1024px) {
+  .section-title em {
+    font-size: 2.4rem !important;
+  }
+}
