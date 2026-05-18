@@ -1080,10 +1080,46 @@ html, body {
 
   /* Kontakt: "Nachricht senden" & "So findest du uns" */
   .contact-layout .section-title {
-    font-size: 2.1rem !important;
+    font-size: 1.9rem !important;
   }
   .contact-layout .section-title em {
-    font-size: 2.4rem !important;
+    font-size: 2.2rem !important;
   }
 }
 
+
+
+
+
+
+/* ── MOBILE FIX: About-Quote überlappt nicht Bewertungen ── */
+@media (max-width: 1024px) {
+  .about-visual {
+    overflow: visible;
+    padding-bottom: 2rem;
+  }
+  .about-quote {
+    position: relative !important;
+    bottom: auto !important;
+    right: auto !important;
+    left: auto !important;
+    margin: 1.5rem 0 0 0 !important;
+    max-width: 100% !important;
+  }
+  .about-layout {
+    gap: 2rem !important;
+  }
+  .about-section {
+    padding-bottom: 4rem !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-quote {
+    margin-top: 1rem !important;
+    padding: 1.2rem 1.4rem !important;
+  }
+  .about-section {
+    padding-bottom: 3rem !important;
+  }
+}
