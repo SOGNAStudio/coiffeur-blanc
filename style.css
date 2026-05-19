@@ -1101,11 +1101,28 @@ html, body {
 
 
 
-@media (max-width: 480px) {
+
+/* ── MOBILE FIX v6: About/Reviews Überlappung ── */
+@media (max-width: 1024px) {
+  /* Kein hartes min-height auf Mobile/Tablet — sonst entsteht Leerraum & Überlappung */
   .about-img,
   .about-visual { min-height: 0 !important; }
-  .about-quote { display: none !important; }
+
+  /* About-Quote nicht negativ ins Reviews schieben */
+  .about-quote {
+    position: relative !important;
+    bottom: auto !important; right: auto !important;
+    margin: 1.5rem auto 0 !important;
+    max-width: 100% !important;
+  }
+
+  /* Saubere Trennung zwischen About und Reviews */
+  .about-section { padding-bottom: 3rem !important; }
+  #bewertungen   { padding-top: 3rem !important; }
+}
+
+@media (max-width: 640px) {
   .about-section { padding-bottom: 2.5rem !important; }
-  #bewertungen { padding-top: 2.5rem !important; }
+  #bewertungen   { padding-top: 2.5rem !important; }
   .about-img { aspect-ratio: 4/5 !important; }
 }
