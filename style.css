@@ -366,6 +366,7 @@ a{color:inherit;text-decoration:none;transition:var(--transition)}
   .hero-portrait-wrap{justify-self:center}
   .hero-bar{max-width:none}
   .about-layout{grid-template-columns:1fr;gap:4rem}
+  .about-quote { display: none !important; }
   .bestseller-grid{grid-template-columns:repeat(2,1fr)}
   .nav-links{display:none}
   .hamburger{display:flex}
