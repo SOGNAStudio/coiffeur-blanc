@@ -366,7 +366,7 @@ a{color:inherit;text-decoration:none;transition:var(--transition)}
   .hero-portrait-wrap{justify-self:center}
   .hero-bar{max-width:none}
   .about-layout{grid-template-columns:1fr;gap:4rem}
-  .about-quote{position:relative !important;bottom:auto !important;right:auto !important;left:auto !important;margin:1.5rem 0 0 0 !important;max-width:100% !important;}
+  .about-quote{position:relative;bottom:auto;right:auto;margin:-3rem 1rem 0 auto}
   .bestseller-grid{grid-template-columns:repeat(2,1fr)}
   .nav-links{display:none}
   .hamburger{display:flex}
@@ -708,9 +708,11 @@ a{color:inherit;text-decoration:none;transition:var(--transition)}
 .about-layout { align-items: flex-start; }
 
 .about-content { padding-top: 0; }
-.about-quote { max-width: 320px; padding: 1.8rem 1.8rem; } /* desktop only, overridden on mobile */
-.about-quote blockquote { font-size: 1.35rem; line-height: 1.45; }
-.about-quote cite { font-size: 0.78rem; }
+@media (min-width: 1025px) {
+  .about-quote { max-width: 320px; padding: 1.8rem 1.8rem; }
+  .about-quote blockquote { font-size: 1.35rem; line-height: 1.45; }
+  .about-quote cite { font-size: 0.78rem; }
+}
 
 /* REVIEWS — keine Bewegung, größer, Coiffeur-Symbol, Author rechts */
 #bewertungen .review-card { transition: box-shadow 0.3s ease; }
@@ -833,11 +835,13 @@ a{color:inherit;text-decoration:none;transition:var(--transition)}
 }
 
 /* ABOUT — make quote box wider */
-.about-quote {
-  max-width: 380px;
-  padding: 1.8rem 2rem;
+@media (min-width: 1025px) {
+  .about-quote {
+    max-width: 380px;
+    padding: 1.8rem 2rem;
+  }
+  .about-quote blockquote { font-size: 1.4rem; }
 }
-.about-quote blockquote { font-size: 1.4rem; }
 
 /* REVIEWS — author bottom-left, avatar first then name, no row-reverse */
 #bewertungen .review-author-row {
@@ -1100,18 +1104,43 @@ html, body {
 
 
 
+
+
+/* ── MOBILE FIX: About-Quote überlappt nicht Bewertungen ── */
 @media (max-width: 1024px) {
+  .about-visual {
+    overflow: visible;
+    padding-bottom: 2rem;
+  }
   .about-quote {
-    position: static !important;
+    position: relative !important;
     bottom: auto !important;
     right: auto !important;
     left: auto !important;
-    margin: 2rem 0 0 0 !important;
+    margin: 1.5rem 0 0 0 !important;
     max-width: 100% !important;
-    order: 3 !important;
   }
-  .about-visual {
-    display: flex !important;
-    flex-direction: column !important;
+  .about-layout {
+    gap: 2rem !important;
+  }
+  .about-section {
+    padding-bottom: 4rem !important;
   }
 }
+
+@media (max-width: 640px) {
+  .about-quote {
+    margin-top: 1rem !important;
+    padding: 1.2rem 1.4rem !important;
+  }
+  .about-section {
+    padding-bottom: 3rem !important;
+  }
+}
+
+
+
+
+
+
+
