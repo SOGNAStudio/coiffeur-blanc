@@ -1125,17 +1125,3 @@ html, body {
 
 
 
-
-/* ── FIX: Header-Breakpoint für mittlere Screens ── */
-@media (max-width: 1280px) and (min-width: 1025px) {
-  .nav-links { gap: 1.2rem; }
-  .nav-links a { font-size: 0.75rem; letter-spacing: 0.05em; }
-  .btn-gold { padding: 0.6rem 1.1rem; font-size: 0.72rem; }
-}
-
-@media (max-width: 1150px) and (min-width: 1025px) {
-  .nav-links { gap: 0.8rem; }
-  .hero-grid { gap: 2rem; }
-  .about-layout { gap: 2rem; }
-  .about-content { max-width: 100%; }
-}
