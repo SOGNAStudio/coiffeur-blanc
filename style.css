@@ -1094,15 +1094,6 @@ html, body {
 }
 
 
-
-
-
-
-
-
-
-
-
 /* ── MOBILE FIX v6: About/Reviews Überlappung ── */
 @media (max-width: 1024px) {
   /* Kein hartes min-height auf Mobile/Tablet — sonst entsteht Leerraum & Überlappung */
@@ -1126,4 +1117,25 @@ html, body {
   .about-section { padding-bottom: 2.5rem !important; }
   #bewertungen   { padding-top: 2.5rem !important; }
   .about-img { aspect-ratio: 4/5 !important; }
+}
+
+
+
+
+
+
+
+
+/* ── FIX: Header-Breakpoint für mittlere Screens ── */
+@media (max-width: 1280px) and (min-width: 1025px) {
+  .nav-links { gap: 1.2rem; }
+  .nav-links a { font-size: 0.75rem; letter-spacing: 0.05em; }
+  .btn-gold { padding: 0.6rem 1.1rem; font-size: 0.72rem; }
+}
+
+@media (max-width: 1150px) and (min-width: 1025px) {
+  .nav-links { gap: 0.8rem; }
+  .hero-grid { gap: 2rem; }
+  .about-layout { gap: 2rem; }
+  .about-content { max-width: 100%; }
 }
