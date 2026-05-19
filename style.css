@@ -1100,19 +1100,18 @@ html, body {
 
 
 
-
-
-/* ── MOBILE FIX: About-Quote überlappt nicht Bewertungen ── */
 @media (max-width: 1024px) {
-  .about-visual { overflow: visible; padding-bottom: 0; }
   .about-quote {
-    position: relative !important;
+    position: static !important;
     bottom: auto !important;
     right: auto !important;
     left: auto !important;
-    margin: 1.5rem 0 0 0 !important;
+    margin: 2rem 0 0 0 !important;
     max-width: 100% !important;
-    padding: 1.4rem 1.6rem !important;
+    order: 3 !important;
   }
-  .about-section { padding-bottom: 4rem !important; }
+  .about-visual {
+    display: flex !important;
+    flex-direction: column !important;
+  }
 }
